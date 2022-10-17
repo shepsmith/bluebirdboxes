@@ -1,0 +1,302 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+
+    <title>Materialize CSS</title>
+    <style>
+      header{
+        background:url(img/homestuff/bb8.jpg); 
+        background-size: cover;
+        background-position: center;
+        min-height: 550px;  
+        }
+       .section{
+         padding-top: 4vw;
+         padding-bottom: 4vw;
+        }
+       .tabs .indicator{
+        background-color: #1a237e;
+        }
+       .tabs .tab a:focus, .tabs .tab a:focus.active{
+        background: transparent;
+        }
+        @media screen and (max-width: 670px){
+        header{
+          max-height: 100px;
+        }
+        } 
+        #text {
+          z-index: 200;
+          position: absolute;
+          color: white;
+          font-size:24px;
+          font-weight: bold;
+          left:40px;
+          top:400px;
+        }
+        </style>
+</head>
+<!--bb8.jpg); -->
+<div class="row">
+ <div id="background" class="col s12 l4">
+   <p id="text">Be like I, hold your head up high,till you 
+    find a bluebird of happiness. <br>
+     You will find greater peace of mind. Knowing 
+     there's a bluebird of happiness. </p>
+ </div>
+</div>
+
+  <head>
+    <style>
+      nav .badge{
+       position: relative;
+       top: 20px;
+       right: 20px;
+   }
+   a .larger {
+       font-size: 8rem;
+   }
+</style>
+     
+<header>
+    <nav class="nav-wraper indigo">
+      <div class="container">
+        <a href="#" class="brand-logo">BlueBird̂</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-links">
+        <i class="material-icons">menu</i>
+        </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#" >Home</a></li>
+                <li><a href="amishstuff" >Amish Stuff</a></li>
+                <li><a href="#" >Birdhouses</a></li>
+                <li><a href="uniqueart" >Unique Art</a></li>
+                <li><a href="#" >Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+        <ul class="sidenav flowtext" id="mobile-links">
+        <li><a href="/index.html" >Home</a></li>
+        <li><a href="amishstuff" >Amish Stuff</a></li>
+        <li><a href="#" >Birdhouses</a></li>
+        <li><a href="uniqueart" >Unique Art</a></li>
+        <li><a href="#" >Contact</a></li>
+    </ul>
+<!--
+    <ul class="sidenav" id="mobile-links">
+        <li><a href="#" >Home</a></li>
+        <li><a href="#" >Amish Stuff</a></li>
+        <li><a href="#" >Nepal Stuff</a></li>
+        <li><a href="#" >CBD & Weed</a></li>
+        <li><a href="#" >Contact</a></li>
+    </ul>
+    
+-->  
+</header>
+
+<section class="container section scrollspy" id="photos">
+  <div class="row">
+    <div class="col s12 l4">
+    <img src="img/homestuff/amishf1.jpg" alt="" class="responsive-img materialboxed">
+  </div>
+    <div class="col s12 l6 offset-l1">
+    <h4 class="indigo-text text-darken-4">Amish Family</h4>
+    <p>The Amish are known for their plain attire. Men wear solid colored shirts, broad-brimmed hats, and suits
+      that signify similarity amongst one another. Amish men grow beards to symbolize manhood and marital
+      status, as well as to promote humility.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 l4 push-l7 offset-l1">
+    <img src="img/homestuff/birdhouses1.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 pull-l5 right-align offset-l1">
+    <h4 class="indigo-text text-darken-4">Birdhouses</h4>
+    <p>A birdhouse is often called a nesting house because it offers a safe place for birds to build their nests, protecting them from weather conditions and predators. During the winter season, 
+      they give birds a place to huddle together for warmth away from the cold air.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 l4"><br>
+    <img src="img/homestuff/cart1.jpg" alt="" class="responsive-img materialboxed">
+    </div>
+    <div class="col s12 l6 offset-l1">
+    <h4 class="indigo-text text-darken-4">Uniqueart</h4>
+    <p>Images from the Lancaster, PA area imposed on unique vinyl canvas and traditional wooden frame.
+      We can also use your images upon request!</p>
+    </div>
+   </div>
+</section>
+
+<div class="parallax-container">
+  <div class="parallax">
+  <img src="img/homestuff/quits1.jpg" alt="" class="responsive-img">
+  </div>
+ </div>
+
+ <!-- services / tabs -->
+ <section class="container section scrollspy" id="services">
+   <div class="row">
+    <div class="col s12 l4">
+    <h5 class="indigo-text text-darken-1"> Little facts about the quilts.</h5>
+    <p>Amish quilts have evolved over 2 centuries – some of the original patterns that are still popular are
+      Double wedding ring, Tree of life, Dresden plate, Log cabin and Star of Bethlehem.</p>
+    <p>All Amish quilts are hand sewn and hand quilted. In Lancaster County especially Amish women from neighboring
+      farms contribute to the making of these beautiful quilts.</p>
+   </div>
+     <div class="col s12 l6 offset-l2">
+       <!--tabs-->
+      <div class="col s12" id="photography" >
+         <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+      </div>
+     <div class="col s12" id="editing">
+      <p class="flow-text indigo-text text-darken-4">EDITING</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+
+<!-- parallax -->
+<div class="parallax-container">
+  <div class="parallax">
+     <img src="/img/homestuff/amish3.jpg" alt="" class="responsive-img">
+  </div>
+ </div>
+
+<!-- contact form -->
+<section class="section container scrollspy" id="contact">
+  <div class="row">
+   <div class="col s12 l5">
+    <h2 class="indigo-text text-darken-4">Get In Touch</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+   </div>
+   <div class="col s12 l5 offset-12">
+     <form action="">
+       <div class="input-field">
+         <i class="material-icons prefix">email</i>
+         <input type="email" id="email">
+         <label for="email">Your Email</label>
+        </div>
+        <div class="input-field">
+           <i class="material-icons prefix">messages</i>
+           <textarea id="message" class="materialize-textarea"></textarea>
+           <label for="message">Your message</label>
+        </div>
+          <div class="input-field">
+            <input type="text" id="date" class="datepicker">
+            <label for="date">Choose a date you need me for...</label>
+          </div>
+            <div class="input-field">
+            <p>Services required...</p>
+            <p>
+             <label>
+             <input type="checkbox">
+             <span>Photography</span>
+             </label>
+            </p>
+            <p>
+            <label>
+             <input type="checkbox">
+             <span>Editing</span>
+             </label>
+            </p>
+           </div>
+            <div class="input-field center">
+              <button class="btn">Submit</button>
+            </div>
+         </form>
+      </div>
+    </div>
+</section>
+<!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+       <div class="col s12 l6">
+        <h5>About me</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+       </div>
+        <div class="col s12 l4 offset-12">
+          <h5>Connect</h5>
+           <ul>
+             <li><a href="" class="grey-text text-lighten-3">Facebook</a></li>
+             <li><a href="" class="grey-text text-lighten-3">Twitter</a></li>
+             <li><a href="" class="grey-text text-lighten-3">Linked In</a></li>
+             <li><a href="" class="grey-text text-lighten-3">Instagram</a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <div class="footer copyright grey darken-4">
+          <div class="container center-align">&copy; 2018 Photo Ninja</div>
+        </div> 
+   </footer>
+
+        
+    <button onclick="hitEvents()">Ellisters Events</button>
+    <div class="container">
+     <a href="#terms" class="btn orange modal-trigger">Terms and Conditions</a>
+       <div class="modal" id="terms">
+        <div class="modal-content">
+         <h4>Terms and Conditions</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+             ut labore et dolore magna aliqua. Tellus in metus vulputate eu scelerisque felis imperdiet 
+             proin fermentum. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui. 
+              Mattis pellentesque id nibh tortor id aliquet lectus.</p>
+            </div>
+        <div class="modal-footer">
+          <a href="#" class="modal-close btn orange">Agree and close</a>
+         </div>
+        </div>
+      </div>
+
+    <!--
+    <div class="container">
+        <h1>Hey, Ninjas</h1>
+    </div>
+    -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav( { onOpenStart: function() {console.log("onOpenStart");}} );
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+        })
+        $(document).ready(function(){
+            $('.modal').modal();
+        
+        
+        })
+    </script>
+    <script>
+        function hitEvents() {
+            var d = new Date();
+            var n = d.getMonth();
+            n++;
+            var url = "http://www.ellistersevents.com/events1.html#e" + n;
+            window.open( 
+                url, "_blank"); 
+            //document.images[0].src = a;
+        }
+    </script>
+
+    </body>
+</html>
