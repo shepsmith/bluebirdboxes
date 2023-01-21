@@ -25,32 +25,57 @@ $result = mysqli_query($conn, $sql);
 $pics = mysqli_fetch_all($result, MYSQLI_ASSOC);
 	// Get image data from database 
 	//$result = $db->query("SELECT image FROM images ORDER BY uploaded DESC"); 
-	//custom_pics (email, seq, custompic, size, finish, request_date) 
+    //custom_pics (email, seq, custompic, size, finish, request_date) 
+    
+
+
+
+
+
 ?>
-
-<?php 
-	//if($result->num_rows > 0){ 
-    foreach($pics as $pic) : ?>
-<div class="row">
-    <div class="col s12 l8"><br>
-    	<div class="gallery"> 
-
-            <img src="data:image/jpg;charset=utf8;base64,
-                <?php echo base64_encode($pic['custompic']); ?>" 
-                    class="responsive-img materialboxed">
-            <p><?php echo $pic['finish']; ?></p>
-
-		</div> 
-	</div>
-</div>
-    <?php endforeach; ?>
 
 <!DOCTYPE html>
 <html>
+    <div class="container">
+        <div class="row">
+
+                <?php foreach($pics as $pic){ ?>
 
 
-		<h4 class="center">success2</h4>
-	
+ 
+
+
+
+
+                        
+                    <div class="card z-depth-0 center" >
+                        <div class="col l3"><br><br>
+                            <?php echo ($pic['size']); ?>
+                        </div>
+                        <div class="col l3"><br><br>
+                            <?php echo ($pic['email']); ?>
+                        </div>
+                        <div class="col l3"><br><br>
+                            <?php echo ($pic['seq']); ?>
+                        </div>
+                        <div class="col l6">
+                            <div class="card-content ">
+                                <img height='50px' src="data:image/jpg;charset=utf8;base64, 
+                                <?php echo base64_encode($pic['custompic']); ?>" 
+                                    class="responsive-img materialboxed">
+                                <!--<img src="img/amish1.jpg" alt="" class="responsive-img materialboxed"> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                <?php } ?>
+
+        </div>
+    </div>
+
+
 	
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
